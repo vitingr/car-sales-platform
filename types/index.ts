@@ -12,7 +12,7 @@ export interface CustomButtonProps {
 }
 
 export interface SearchManufactureProps {
-  manufacturer: string, 
+  manufacturer: string;
   setmanufacturer: (manufacturer: string) => void
 }
 
@@ -29,4 +29,10 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+}
+
+export interface CarDetailsProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  car: CarProps
 }
